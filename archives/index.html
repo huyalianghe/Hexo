@@ -1624,7 +1624,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/Hexo/js/app.js","parallax":"/Hexo/js/plugins/parallax.js","rightMenu":"/Hexo/js/plugins/rightMenu.js","rightMenus":"/Hexo/js/plugins/rightMenus.js","sites":"/Hexo/js/plugins/tags/sites.js","friends":"/Hexo/js/plugins/tags/friends.js","contributors":"/Hexo/js/plugins/tags/contributors.js","search":"/Hexo/js/search/hexo.js"},"css":{"style":"/Hexo/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726072435311),
+    lastupdate: new Date(1726143847719),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -1634,7 +1634,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           friendlyShow: true
         },
         runtime: {
-          data: "2020/01/01",
+          data: "2024/09/10",
           unit: "天"
         }
       }
@@ -2162,6 +2162,23 @@ p.spoiler {
             
           
           
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/Hexo/friends/" title="友链"
+                  
+                  
+                  
+                    active-action="action-Hexofriends"
+                  >
+                  <i class='fa-solid fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+          
 				</ul>
 			</div>
       
@@ -2226,6 +2243,23 @@ p.spoiler {
                     active-action="action-Hexoarchives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/Hexo/friends/" title="友链"
+                  
+                  
+                  
+                    active-action="action-Hexofriends"
+                  >
+                  <i class='fa-solid fa-link fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -2310,24 +2344,8 @@ p.spoiler {
 						<h2>2024</h2>
 					
 						<div class='timenode'>
-								<a class="meta" href="/Hexo/posts/1c630b12.html">
-									<time>09-12</time>
-									
-										w
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
 								<a class="meta" href="/Hexo/posts/4a17b156.html">
-									<time>09-12</time>
+									<time>09-10</time>
 									
 										Hello World
 									
@@ -2367,46 +2385,6 @@ p.spoiler {
         
       </div>
     
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/Hexo/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/Hexo/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
     
   </div>
 </section>
@@ -2691,7 +2669,7 @@ p.spoiler {
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"huyalianghe/Hexo","repo-id":"xxx","category":"xxx","category-id":"xxx","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{
